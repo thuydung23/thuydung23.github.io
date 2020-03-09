@@ -1,0 +1,133 @@
+/********* MENU *************
+ I. Total
+ II. Header
+ III. Content
+ III.1. Page index
+ IV. Footer
+*/
+
+
+/* I. Total */
+
+body {
+    margin: 0;
+    font-family: "Karma", sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+input[type='text']{
+    padding: 4px 6px;
+}
+
+/* II.Header */
+#header {
+    height: 50px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+#header .user {
+    float: left;
+    margin: 10px 0 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    cursor: pointer;
+}
+#header .email {
+    float: right;
+    margin: 12px 30px 0 20px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+#header .dowload {
+    float: right;
+    margin: 12px 0 0 10px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+
+/* III.Content 
+/* 1. Page index
+*/
+#content {
+    margin-top: 60px;
+}
+#menu > div > div > div{
+    padding: 3px;
+    height: 100%;
+    width: 100%;
+    border: solid 1px grey;
+    cursor: pointer;
+    text-align: center;
+}
+#menu > div > div > div:hover {
+    box-shadow: 2px 2px red;
+}
+#menu > div > div > div > svg {
+    font-size: 25px;
+}
+#iframe {
+    border: none;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.none-active{
+    color: grey;
+}
+
+
+/* IV. Footer */
+#footer{
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: solid 1px grey;
+}
+
+#footer > div > div > div {
+    padding: 20px;
+}
+
+#footer > div > div > div >div >svg {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+#footer > div > div > div >div > a {
+    color: grey;
+}
+
+#tags > div {
+    font-size: 20px;
+    font-weight: 700;
+}
+#tags > div >span {
+    font-size: 17px;
+    color: white;
+    background-color: grey;
+    padding: 3px 4px;
+    border: solid 1px grey;
+    margin: 2px -1px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#footer .copyright {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 17px;
+}
